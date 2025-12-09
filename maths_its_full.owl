@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:m="http://example.org/maths_its#"
+    xml:base="http://example.org/maths_its">
+
+    <owl:Ontology rdf:about="http://example.org/maths_its"/>
+
+    <owl:Class rdf:about="http://example.org/maths_its#Subject"/>
+    <owl:Class rdf:about="http://example.org/maths_its#Topic"/>
+    <owl:Class rdf:about="http://example.org/maths_its#Concept"/>
+    <owl:Class rdf:about="http://example.org/maths_its#Skill"/>
+    <owl:Class rdf:about="http://example.org/maths_its#Hint"/>
+    <owl:Class rdf:about="http://example.org/maths_its#QuestionTemplate"/>
+    <owl:Class rdf:about="http://example.org/maths_its#Stage"/>
+
+    <owl:Class rdf:about="http://example.org/maths_its#Shape">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Concept"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Rectangle">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Shape"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Square">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Shape"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Triangle">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Shape"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Circle">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Shape"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Ellipse">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Shape"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Polygon">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Shape"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Quadrilateral">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Polygon"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Parallelogram">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Quadrilateral"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Rhombus">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Parallelogram"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Trapezium">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Quadrilateral"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Pentagon">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Polygon"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/maths_its#Hexagon">
+        <rdfs:subClassOf rdf:resource="http://example.org/maths_its#Polygon"/>
+    </owl:Class>
+
+</rdf:RDF>

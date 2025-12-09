@@ -1,0 +1,21 @@
+<div class="row justify-content-center">
+  <div class="col-12 col-md-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4 class="mb-3">Start Stage {{ stage }}: {{ stage_meta.name }}</h4>
+        <p>Stage difficulty (default: {{ default_level }}). Choose a level to start this stage:</p>
+        <form method="post">
+          <div class="mb-3">
+            <label class="form-label">Select difficulty</label>
+            <select class="form-control" name="level">
+              <option value="Beginner" {% if default_level=='Beginner' %}selected{% endif %}>Beginner</option>
+              <option value="Intermediate" {% if default_level=='Intermediate' %}selected{% endif %}>Intermediate</option>
+              <option value="Advanced" {% if default_level=='Advanced' %}selected{% endif %}>Advanced</option>
+            </select>
+          </div>
+          <button class="btn btn-primary">Start Stage</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
